@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&family=Yeseva+One&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/78df538078.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: aqua;
+            background-image: linear-gradient(blue, cyan);
+            font-family: 'Poppins';
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 50px 70px 100px 70px;
+            border-radius: 20px;
+            gap: 20px;
+        }
+        .input-group .logo {
+            display: flex;
+            border-bottom: 1px solid black;
+        }
+        .login-form h1 {
+            text-align: center;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .input-group .forget {
+            text-align: right;
+            color: black;
+            text-decoration: none;
+            font-size: 10px;
+            padding-top: 7px;
+        }
+        input {
+            width: 100%;
+            border: none;
+            padding-bottom: 5px;
+        }
+        input:focus {
+            outline: none;
+        }
+        .input-group input {
+            width: 100%;
+        }
+         label {
+            padding-bottom: 10px;
+        }
+        button {
+            padding: 8px 30px;
+            border-radius: 15px;
+            margin: 8px 0;
+            border: none;
+            background-image: linear-gradient(rgb(225, 0, 255), rgb(0, 255, 149));
+        }
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+        a :hover {
+            color: blanchedalmond;
+            background-image: linear-gradient(rgb(216, 31, 152), rgba(10, 140, 216, 0.766));
+            width: 50%;
+        }
+        .box {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+         .box1 {
+            padding: 5px;
+            color: blue;
+            font-size: 20px;
+
+        }
+         .box2 {
+            padding: 5px;
+            color: deepskyblue;
+            font-size: 20px;
+        }
+         .box3 {
+            padding: 5px;
+            font-size: 20px;
+        }
+        .coma {
+            text-align: center;
+            padding-top: 15px;
+        }
+        .call {
+            text-align: center;
+            font-size: 11px;
+        }
+        .missed-call {
+            text-align: center;
+            font-size: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <h1>Login</h1>
+        <div class="input-group">
+            <label for="">Username</label>
+           <div class="logo">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Type your username"></div>
+           </div>
+        <div class="input-group">
+            <label for="">Password</label>
+           <div class="logo">
+            <i class="fa-solid fa-lock"></i>
+            <input type="text" placeholder="Type your Password"></div>
+            <a href="forgot-pass.html" class="forget">Forgot Password?</a>
+           <button>
+            <a href="login-submit.html">Login</a>
+           </button>
+            <div class="coma"><small>Or sign up using</small></div>
+           </div>
+          <div class="box">
+            <div class="box1"><i class="fa-brands fa-facebook"></i></div>
+            <div class="box2"><i class="fa-brands fa-square-twitter"></i></div>
+            <div class="box3"><i class="fa-brands fa-x-twitter"></i></div>
+          </div>
+          <div class="call">Or sign up using</div>
+    </div>
+</body>
+</html>

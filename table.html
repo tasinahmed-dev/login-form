@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+       table, th, td {
+        border: 4px solid blueviolet;
+        border-collapse: collapse;
+       } 
+       .elon-m :nth-child(4) {
+        background-color: aqua;
+        color: green;
+       }
+       .apple-s :nth-child(3) {
+        background-color: cornflowerblue;
+        color: rgb(32, 2, 34);
+       }
+    </style>
+</head>
+<body>
+    <table>
+       <thead>
+        <tr>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder of Microsoft</td>
+            <td>10000000000000$</td>
+        </tr> 
+        <tr class="apple-s">
+            <td>2</td>
+            <td>Stve Jobs</td>
+            <td>Founder of Apple</td>
+            <td>100000000000000$</td>
+        </tr> 
+        <tr class="elon-m">
+            <td>3</td>
+            <td>Elon Musk</td>
+            <td>Founder of Space X</td>
+            <td>1000000000000000$</td>
+        </tr> 
+        <tr>
+            <td>4</td>
+            <td>Mark Jukerberg</td>
+            <td>Founder of Facebook</td>
+            <td>100000000000000$</td>
+        </tr> 
+       </tbody>
+    </table>
+</body>
+</html>
